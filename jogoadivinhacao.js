@@ -9,8 +9,6 @@ var segredo = gerarNumeroAleatorio(1, 10);
 console.log("===== Começou o jogo! ===== Tente adivinhar o número a ser sorteado...");
 console.log("\n");
 
-
-
 while (chute != segredo) {
 	numeroTentativas++;
 	
@@ -25,15 +23,8 @@ while (chute != segredo) {
 	}
 	
 }
-console.log("Parabéns! Você acertou miseravi, na tentativa ." + numeroTentativas);
 
-
-
-
-
-
-
-
+console.log("Parabéns! Você acertou, na tentativa ." + numeroTentativas);
 
 function gerarNumeroAleatorio(min, max) {
 	return (Math.floor(Math.random() * (max - min)) + min)
